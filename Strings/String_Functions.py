@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    string str,str2;
+    string str,str2,str3;
   
     getline(cin,str);                               // Taking string input using getline()
     cout<<"The initial string is -> ";
@@ -37,6 +37,22 @@ int main()
     cout<<str<<endl;
     cout<<"The 2nd string after swapping is : ";
     cout<<str2<<endl;
+	
+	cout << "Enter the String to Convert into Lowercase ->  ";
+	getline(cin, str3);
+	for (int i = 0; i <str3.length(); i++)
+  	{
+  		str3[i] = tolower(str3[i]);
+  	}
+	cout<< "The Given String in LowerCase -> " << str3;
+    
+    cout << "Enter the String to Convert into UpperCase ->  ";
+	getline(cin, str3);
+	for (int i = 0; i <str3.length(); i++)
+  	{
+  		str3[i] = toupper(str3[i]);
+  	}
+	cout<< "The Given String in UpperCase-> " << str3;
  
     return 0;
  
