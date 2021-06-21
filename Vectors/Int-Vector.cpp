@@ -17,7 +17,7 @@ int main()
     
   
     cout<<"Elements of vector are- > "<<endl;
-    for(vector<int> ::iterator i=v1.begin();i!=v1.end();i++)
+    for(vector<int> ::iterator i=v1.begin();i!=v1.end();i++)                  //using vector iterator
     cout<<*i<<endl;
     
     int s=v1.size();
@@ -35,8 +35,10 @@ int main()
   
     v1.pop_back();
    cout<<"Vector after pop operation - > "<<endl;
-    for(vector<int> ::iterator i=v1.begin();i!=v1.end();i++)
-    cout<<*i<<endl;
+   for(int i=0;i<v.size();i++)                      //common way of accessing elements
+       {
+           cout<<v[i]<<endl;
+       }
     
 
     return 0;
